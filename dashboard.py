@@ -8,7 +8,7 @@ from datetime import datetime
 # Load data (you can replace with actual Excel or CSV file)
 @st.cache_data
 def load_data():
-    df = pd.read_excel("certification-Powebi (V0.03).xlsx", sheet_name=None)
+    df = pd.read_excel("certification.xlsx", sheet_name=None)
     combined = []
     for sheet_name, sheet in df.items():
         if sheet.empty:
